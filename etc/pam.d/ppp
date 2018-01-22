@@ -1,0 +1,9 @@
+#%PAM-1.0
+# Information for the PPPD process with the 'login' option.
+auth	sufficient	pam_permit.so
+account	sufficient	pam_permit.so
+# FAISAL: below lines commented out from original
+# auth	required	pam_nologin.so
+# @include common-auth
+# @include common-account
+# @include common-session
