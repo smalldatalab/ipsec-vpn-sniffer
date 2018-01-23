@@ -9,7 +9,7 @@ docker run \
     -p 4500:4500/udp \
     --add-host=pgdb:172.31.28.163 \
     -v /lib/modules:/lib/modules:ro \
-    -v /home/ec2-user/servers/vpn_docker/root/scripts:/root/scripts \
+    -v $( pwd )/logger-scripts:/root/scripts \
     -d --privileged \
     faisal/ipsec-vpn-sniffer
     # hwdsl2/ipsec-vpn-server
